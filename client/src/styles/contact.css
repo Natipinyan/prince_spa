@@ -1,0 +1,170 @@
+/* --- Contact Section --- */
+.contact {
+    background-image: linear-gradient(to bottom, #111827, #000000); /* from-gray-900 to-black */
+    color: white;
+    padding: 6rem 1.5rem;
+}
+
+.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact__header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact__title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+    font-size: 1.25rem;
+    color: #d1d5db; /* gray-300 */
+    font-weight: 300;
+}
+
+.contact__grid {
+    display: grid;
+    gap: 3rem;
+}
+
+/* --- Contact Info List --- */
+.contact__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-item__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--brand-accent);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.info-item__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.info-item__text {
+    color: #d1d5db; /* gray-300 */
+}
+
+/* --- Booking Card --- */
+.booking-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.booking-card__text {
+    color: #d1d5db; /* gray-300 */
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Pushes button to the bottom */
+}
+
+.booking-card__button {
+    width: 100%;
+    background-color: var(--brand-accent);
+    color: var(--brand-primary);
+    padding: 0.8rem 1rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.booking-card__button:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+
+/* --- Social & Map --- */
+.contact__social-map {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.social-links__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.social-links__icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links__icon-button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--brand-accent);
+    color: var(--brand-accent);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links__icon-button:hover {
+    background-color: var(--brand-accent);
+    color: var(--brand-primary);
+}
+
+.map-placeholder {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af; /* gray-400 */
+}
+
+.map-placeholder__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Responsive Grid --- */
+@media (min-width: 768px) {
+    .contact__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

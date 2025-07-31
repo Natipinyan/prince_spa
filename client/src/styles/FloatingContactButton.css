@@ -1,0 +1,42 @@
+.floating-contact-btn {
+    position: fixed;
+    bottom: 2rem;
+    z-index: 900;
+    width: 64px;
+    height: 64px;
+    background-color: var(--brand-accent);
+    color: var(--brand-primary);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float-in 0.5s ease-out forwards;
+}
+
+/* Handle LTR/RTL positioning */
+.lang-en .floating-contact-btn {
+    right: 2rem;
+}
+.lang-he .floating-contact-btn {
+    left: 2rem;
+}
+
+.floating-contact-btn:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float-in {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

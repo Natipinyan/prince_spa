@@ -1,0 +1,26 @@
+[
+    {
+        "title": "בריכת מים חמים",
+        "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&h=600&fit=crop",
+        "category": "pool",
+        "description": "בריכה מרגיעה עם מים חמים."
+    },
+    {
+        "title": "חדר טיפולים",
+        "url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop",
+        "category": "treatments",
+        "description": "חדר טיפולים עם אווירה שלווה."
+    },
+    {
+        "title": "מתקני ספא",
+        "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop",
+        "category": "facilities",
+        "description": "מתקני ספא יוקרתיים ומפנקים."
+    },
+    {
+        "title": "החלק החיצוני",
+        "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
+        "category": "exterior",
+        "description": "הנוף המהמם של הספא מהחוץ."
+    }
+]
