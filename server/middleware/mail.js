@@ -36,7 +36,7 @@ async function handleFormSubmission(req, res) {
             html: htmlContent
         });
 
-        console.log('המייל נשלח בהצלחה.');
+        //console.log('המייל נשלח בהצלחה.');
 
         return res.status(200).json({ success: true, message: 'הפניה נשלחה בהצלחה!' });
 
