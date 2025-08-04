@@ -118,6 +118,7 @@
 
 .social-links__icons {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -138,6 +139,11 @@
     background-color: var(--brand-accent);
     color: var(--brand-primary);
 }
+.social-icon {
+    width: 30px;
+    height: 30px;
+    color: inherit;
+}
 
 .map-placeholder {
     background-color: rgba(255, 255, 255, 0.05);
@@ -155,6 +161,13 @@
     height: 48px;
     margin-bottom: 0.5rem;
 }
+.map-placeholder__map {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 12px;
+}
+
 
 /* --- Responsive Grid --- */
 @media (min-width: 768px) {

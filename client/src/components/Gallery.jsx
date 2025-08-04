@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import galleryData from '../Entities/GalleryImage.json';
+import galleryData from '../Entities/galleryData';
 import '../styles/gallery.css';
 
 export default function Gallery({ language }) {
-    const [images, setImages] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        setImages(galleryData);
-    }, []);
 
     const content = {
         he: {
@@ -38,16 +33,16 @@ export default function Gallery({ language }) {
 
     const nextImage = (e) => {
         e.stopPropagation();
-        const nextIndex = (currentIndex + 1) % images.length;
+        const nextIndex = (currentIndex + 1) % galleryData.length;
         setCurrentIndex(nextIndex);
-        setSelectedImage(images[nextIndex]);
+        setSelectedImage(galleryData[nextIndex]);
     };
 
     const prevImage = (e) => {
         e.stopPropagation();
-        const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+        const prevIndex = currentIndex === 0 ? galleryData.length - 1 : currentIndex - 1;
         setCurrentIndex(prevIndex);
-        setSelectedImage(images[prevIndex]);
+        setSelectedImage(galleryData[prevIndex]);
     };
 
     return (
@@ -59,16 +54,16 @@ export default function Gallery({ language }) {
                 </div>
 
                 <div className="gallery__grid">
-                    {images.map((image, index) => (
+                    {galleryData.map((image, index) => (
                         <div
                             key={index}
                             className="gallery__item"
                             onClick={() => openModal(image, index)}
                         >
-                            <img src={image.url} alt={image.title} className="gallery__image" />
+                            <img src={image.url} alt={image.title[language]} className="gallery__image" />
                             <div className="gallery__item-overlay">
                                 <div className="gallery__item-caption">
-                                    <h3 className="gallery__item-title">{image.title}</h3>
+                                    <h3 className="gallery__item-title">{image.title[language]}</h3>
                                 </div>
                             </div>
                         </div>
@@ -79,16 +74,26 @@ export default function Gallery({ language }) {
             {selectedImage && (
                 <div className="gallery__modal" onClick={closeModal}>
                     <div className="gallery__modal-content" onClick={(e) => e.stopPropagation()}>
-                        <img src={selectedImage.url} alt={selectedImage.title} className="gallery__modal-image" />
+                        <img
+                            src={selectedImage.url}
+                            alt={selectedImage.title[language]}
+                            className="gallery__modal-image"
+                        />
 
-                        <button className="gallery__modal-button gallery__modal-button--close" onClick={closeModal}><X size={28} /></button>
-                        <button className="gallery__modal-button gallery__modal-button--prev" onClick={prevImage}><ChevronLeft size={36} /></button>
-                        <button className="gallery__modal-button gallery__modal-button--next" onClick={nextImage}><ChevronRight size={36} /></button>
+                        <button className="gallery__modal-button gallery__modal-button--close" onClick={closeModal}>
+                            <X size={28} />
+                        </button>
+                        <button className="gallery__modal-button gallery__modal-button--prev" onClick={prevImage}>
+                            <ChevronLeft size={36} />
+                        </button>
+                        <button className="gallery__modal-button gallery__modal-button--next" onClick={nextImage}>
+                            <ChevronRight size={36} />
+                        </button>
 
                         <div className="gallery__modal-caption">
-                            <h3 className="gallery__modal-title">{selectedImage.title}</h3>
+                            <h3 className="gallery__modal-title">{selectedImage.title[language]}</h3>
                             {selectedImage.description && (
-                                <p className="gallery__modal-description">{selectedImage.description}</p>
+                                <p className="gallery__modal-description">{selectedImage.description[language]}</p>
                             )}
                         </div>
                     </div>

@@ -64,7 +64,7 @@ a, button {
 .contact {
     background-image: linear-gradient(to bottom, #111827, #000000);
     color: white;
-    padding: 6rem 1.5rem 0; /* padding-bottom is now 0 */
+    padding: 6rem 1.5rem 0;
 }
 
 .site-footer {
@@ -79,4 +79,16 @@ a, button {
     color: var(--brand-muted);
     font-size: 0.875rem;
 }
+/* --- RTL for Hebrew --- */
+.lang-he {
+    direction: rtl;
+    text-align: right;
+}
+
+/* --- LTR for English --- */
+.lang-en {
+    direction: ltr;
+    text-align: left;
+}
+
 

@@ -18,13 +18,15 @@
 }
 
 /* Handle LTR/RTL positioning */
-.lang-en .floating-contact-btn {
+.lang-en .floating-buttons-wrapper {
     right: 2rem;
-}
-.lang-he .floating-contact-btn {
-    left: 2rem;
+    left: auto;
 }
 
+.lang-he .floating-buttons-wrapper {
+    left: 2rem;
+    right: auto;
+}
 .floating-contact-btn:hover {
     transform: scale(1.1) translateY(-2px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
@@ -39,4 +41,47 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+
+.floating-buttons-wrapper {
+    position: fixed;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+    z-index: 1000;
+}
+
+.floating-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--brand-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: var(--brand-accent);
+    transform: scale(1.1);
+}
+
+.main-button {
+    background-color: var(--brand-text);
+}
+
+.action-button {
+    background-color: var(--brand-primary);
+}
+
+.social-icon {
+    font-size: 1.4rem;
 }
