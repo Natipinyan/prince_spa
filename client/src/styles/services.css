@@ -28,12 +28,12 @@
     font-weight: 300;
 }
 
+
 .services__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     gap: 2rem;
 }
+
 
 /* --- Service Card --- */
 .service-card {
@@ -42,9 +42,6 @@
     overflow: hidden;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    flex: 1 1 320px;
-    max-width: 400px;
-
 }
 
 .service-card:hover {
@@ -107,5 +104,17 @@
 .service-card__description {
     color: var(--brand-muted);
     line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 

@@ -1,5 +1,4 @@
-// src/pages/Home.js
-import React, { useState } from 'react';
+import React, { useState  } from 'react';
 import LanguageToggle from './components/LanguageToggle';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -36,8 +35,11 @@ export default function Home() {
             <footer className="site-footer">
                 <p className="footer-text">
                     {language === 'he'
-                        ? '© 2024 פרינס ספא טבריה. כל הזכויות שמורות.'
+                        ? '© 2025 פרינס ספא טבריה. כל הזכויות שמורות.'
                         : '© 2024 Prince Spa Tiberias. All rights reserved.'}
+                </p>
+                <p className="footer-text">
+                    nati pinyan 0559399394
                 </p>
             </footer>
 

@@ -21,20 +21,24 @@ async function handleFormSubmission(req, res) {
         }
         const htmlContent = generateHtmlEmailContent({ name, phone, email, message });
 
+
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: process.env.SMTP_HOST, // environment variable for SMTP host
+            port: Number(process.env.SMTP_PORT), // environment variable for SMTP port
+            secure: process.env.SMTP_SECURE === 'true', // environment variable for secure connection
             auth: {
-                user: process.env.GMAIL_USER, // environment variable for Gmail user
-                pass: process.env.GMAIL_APP_PASSWORD, // environment variable for Gmail app password
-            }
-        });
+                user: process.env.EMAIL_USER, // environment variable for email user
+                pass: process.env.EMAIL_PASS, // environment variable for email password
+            },
+        })
 
         await transporter.sendMail({
-            from: `"פניות מהאתר" <${process.env.GMAIL_USER}>`,
-            to: process.env.EMAIL_ADDRES,
+            from: `"פניות מהאתר" <${process.env.EMAIL_USER}>`, // environment variable for email user
+            to: process.env.EMAIL_TO, // environment variable for recipient email
             subject: `פנייה חדשה מ - ${name}`,
             html: htmlContent
         });
+
 
         //console.log('המייל נשלח בהצלחה.');
 

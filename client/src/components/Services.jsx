@@ -1,11 +1,13 @@
 import React from 'react';
-import { Waves, Snowflake, Droplets, Sun, Coffee } from 'lucide-react';
+import { Waves, Snowflake, Droplets, Sun, Coffee, PartyPopper } from 'lucide-react';
 import '../styles/services.css';
 import massage from '../images/massageBed2.jpg';
 import bar from '../images/bar1.jpg';
 import oil from '../images/oilBath.jpg';
 import ice from '../images/ice.jpg';
 import pool from '../images/highLookNight3.jpg';
+import heroBackground from '../images/heroBackground.jpg';
+
 
 export default function Services({ language }) {
     const content = {
@@ -42,7 +44,14 @@ export default function Services({ language }) {
                     title: 'בר ושירותי הארחה',
                     description: 'בר מלא עם משקאות רעננים וכיבוד קל, בחצר ירוקה ונעימה.',
                     image: bar,
+                },
+                {
+                    icon: PartyPopper,
+                    title: 'אירועים, ימי הולדת ומסיבות חברים',
+                    description: 'מקום אידיאלי לחגוג עם המשפחה והחברים - ימי הולדת, מסיבות פרטיות ואירועים בלתי נשכחים באווירה ייחודית.',
+                    image: heroBackground,
                 }
+
             ]
         },
         en: {
@@ -77,7 +86,14 @@ export default function Services({ language }) {
                     title: 'Bar & Hospitality Services',
                     description: 'Full bar with refreshing drinks and light refreshments, in a green and pleasant courtyard.',
                     image: bar,
+                },
+                {
+                    icon: PartyPopper,
+                    title: 'Events & Parties',
+                    description: 'The perfect place to celebrate with family and friends – birthdays, private parties, and unforgettable events in a unique atmosphere.',
+                    image: heroBackground,
                 }
+
             ]
         }
     };
