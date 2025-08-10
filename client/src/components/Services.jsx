@@ -5,7 +5,7 @@ import massage from '../images/massageBed2.jpg';
 import bar from '../images/bar1.jpg';
 import oil from '../images/oilBath.jpg';
 import ice from '../images/ice.jpg';
-import pool from '../images/highLookNight3.jpg';
+import pool from '../images/pool.jpg';
 import lovePackage from '../images/couple.JPG';
 import groups from '../images/groups.jpg';
 import heroBackground from '../images/heroBackground.jpg';
@@ -31,8 +31,8 @@ export default function Services({ language }) {
                 },
                 {
                     icon: Snowflake,
-                    title: 'אמבטיית קרח',
-                    description: 'חוויה מרעננת ומחזקת באמבטיית קרח טיפולית לשיפור הזרימה וחיזוק המערכת החיסונית.',
+                    title: 'אמבט קרח',
+                    description: 'חוויה מרעננת ומחזקת באמבט קרח טיפולית לשיפור הזרימה וחיזוק המערכת החיסונית.',
                     image: ice,
                 },
                 {

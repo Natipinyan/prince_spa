@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+// Components
 import LanguageToggle from './components/LanguageToggle';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -9,17 +10,24 @@ import BookingModal from './components/BookingModal';
 import FloatingContactButton from './components/FloatingContactButton';
 import LoadingScreen from './components/LoadingScreen';
 
+// Images from Hero / general
 import heroBackground from './images/heroBackground.jpg';
 import logoHero from './images/logoHero.png';
+
+// Images from Services
 import massage from './images/massageBed2.jpg';
 import bar from './images/bar1.jpg';
 import oil from './images/oilBath.jpg';
 import ice from './images/ice.jpg';
-import pool from './images/highLookNight3.jpg';
+import pool from './images/pool.jpg';
+import lovePackage from './images/couple.JPG';
+import groups from './images/groups.jpg';
 
+// Styles
 import './styles/globals.css';
 
 /**
+ * Preload a single image
  * @param {string} src
  * @returns {Promise<void>}
  */
@@ -32,7 +40,6 @@ const preloadImage = (src) => {
     });
 };
 
-
 export default function Home() {
     const [language, setLanguage] = useState('he');
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,13 +47,18 @@ export default function Home() {
 
     useEffect(() => {
         const imagesToPreload = [
+            // Hero & general
             heroBackground,
             logoHero,
+
+            // Services
             massage,
             bar,
             oil,
             ice,
             pool,
+            lovePackage,
+            groups,
         ];
 
         const preloadAllImages = async () => {
@@ -92,9 +104,7 @@ export default function Home() {
                         ? '© 2025 פרינס ספא טבריה. כל הזכויות שמורות.'
                         : '© 2024 Prince Spa Tiberias. All rights reserved.'}
                 </p>
-                <p className="footer-text">
-                    nati pinyan 0559399394
-                </p>
+                <p className="footer-text">nati pinyan 0559399394</p>
             </footer>
 
             <FloatingContactButton onClick={openModal} language={language} />

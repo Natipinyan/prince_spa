@@ -95,7 +95,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
     color: #d1d5db; /* Light gray */
 }
@@ -215,6 +215,8 @@
     .hero__contact-info {
         gap: 0.6rem;
         margin-top: 1.5rem;
+        font-size: 1.2rem;
+
     }
 
     .hero__scroll-indicator {
