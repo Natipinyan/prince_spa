@@ -65,7 +65,7 @@ export default function Contact({ language }) {
                         <div className="contact__info-list">
                             <InfoItem icon={MapPin} title="כתובת" text={text.address}/>
                             <InfoItem icon={Phone} title="טלפון" text={text.phones.join(", ")}/>
-                            <InfoItem icon={Mail} title="אימייל" text="info@princespa.co.il"/>
+                            <InfoItem icon={Mail} title="אימייל" text="info@princespatiberyas.com"/>
                             <InfoItem icon={Clock} title="שעות פתיחה" text={text.hours}/>
                         </div>
 

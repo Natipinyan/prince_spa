@@ -1,11 +1,13 @@
 import React from 'react';
-import { Waves, Snowflake, Droplets, Sun, Coffee, PartyPopper } from 'lucide-react';
+import { Waves, Snowflake, Droplets, Sun, Coffee, PartyPopper ,Heart,Calendar} from 'lucide-react';
 import '../styles/services.css';
 import massage from '../images/massageBed2.jpg';
 import bar from '../images/bar1.jpg';
 import oil from '../images/oilBath.jpg';
 import ice from '../images/ice.jpg';
 import pool from '../images/highLookNight3.jpg';
+import lovePackage from '../images/couple.JPG';
+import groups from '../images/groups.jpg';
 import heroBackground from '../images/heroBackground.jpg';
 
 
@@ -17,8 +19,8 @@ export default function Services({ language }) {
             services: [
                 {
                     icon: Waves,
-                    title: 'בריכה חיצונית מחוממת',
-                    description: 'בריכה גדולה ומפוארת עם מים מחוממים, מושלמת לרגיעה והנאה בכל עונות השנה.',
+                    title: 'בריכה חיצונית גדולה',
+                    description: 'בריכה גדולה ומפוארת, המים מתאימים לשימוש בכל עונות השנה – בחורף המים מחוממים לחוויה מושלמת בכל מזג אוויר.',
                     image: pool,
                 },
                 {
@@ -29,29 +31,40 @@ export default function Services({ language }) {
                 },
                 {
                     icon: Snowflake,
-                    title: 'בריכת קרח',
-                    description: 'חוויה מרעננת ומחזקת בבריכת קרח טיפולית לשיפור הזרימה וחיזוק המערכת החיסונית.',
+                    title: 'אמבטיית קרח',
+                    description: 'חוויה מרעננת ומחזקת באמבטיית קרח טיפולית לשיפור הזרימה וחיזוק המערכת החיסונית.',
                     image: ice,
                 },
                 {
                     icon: Sun,
-                    title: 'בריכת שמנים ארומטיים',
-                    description: 'טבילה במים עשירים בשמנים ארומטיים טבעיים לחוויה חושית מרגיעה.',
+                    title: 'אמבט שמנים',
+                    description: 'טבילה באמבט שמנים עשיר במינרלים טבעיים לחוויה חושית מרגיעה ובריאותית.',
                     image: oil,
                 },
                 {
                     icon: Coffee,
-                    title: 'בר ושירותי הארחה',
-                    description: 'בר מלא עם משקאות רעננים וכיבוד קל, בחצר ירוקה ונעימה.',
+                    title: 'בר מסעדה ושירותי אוכל',
+                    description: 'במקום פועל בר מסעדה מובחר המציע מגוון משקאות איכותיים ומנות – פיצות טריות, פלטות גבינות, פלטות ירקות, פסטות ועוד.',
                     image: bar,
                 },
                 {
                     icon: PartyPopper,
                     title: 'אירועים, ימי הולדת ומסיבות חברים',
-                    description: 'מקום אידיאלי לחגוג עם המשפחה והחברים - ימי הולדת, מסיבות פרטיות ואירועים בלתי נשכחים באווירה ייחודית.',
+                    description: 'מקום אידיאלי לחגוג עם המשפחה והחברים – ימי הולדת, מסיבות פרטיות ואירועים בלתי נשכחים באווירה ייחודית.',
                     image: heroBackground,
+                },
+                {
+                    icon: Calendar,
+                    title: 'ימי פעילות לחברות וימי כיף לקבוצות',
+                    description: 'אנו מציעים חבילות מותאמות אישית לימי גיבוש, ימי כיף ופעילויות ייחודיות לקבוצות – שילוב מושלם של רוגע, חוויות ואוכל מצוין.',
+                    image: groups,
+                },
+                {
+                    icon: Heart,
+                    title: 'חבילת אהבה בשניים',
+                    description: 'חוויה זוגית יוקרתית הכוללת סוויטה פרטית עם ג’קוזי מפנק, מסאז׳ זוגי של 45 דקות, פינוקי שוקולד ויין משובח. החבילה כוללת שעה וחצי של רומנטיקה טהורה.',
+                    image: lovePackage,
                 }
-
             ]
         },
         en: {
@@ -60,31 +73,32 @@ export default function Services({ language }) {
             services: [
                 {
                     icon: Waves,
-                    title: 'Large Heated Outdoor Pool',
-                    description: 'A grand and luxurious pool with heated water, perfect for relaxation and enjoyment year-round.',
+                    title: 'Large Outdoor Pool',
+                    description: 'A grand and luxurious pool suitable for all seasons – in winter the water is heated for a perfect experience in any weather.',
                     image: pool,
                 },
                 {
                     icon: Droplets,
                     title: 'Professional Massage Treatments',
                     description: 'A variety of massage treatments by professional therapists for deep relaxation and stress relief.',
-                    image: massage,                },
+                    image: massage,
+                },
                 {
                     icon: Snowflake,
-                    title: 'Ice Pool',
-                    description: 'A refreshing and strengthening experience in our therapeutic ice pool to improve circulation and boost immunity.',
+                    title: 'Ice Bath',
+                    description: 'A refreshing and strengthening experience in a therapeutic ice bath to improve circulation and boost immunity.',
                     image: ice,
                 },
                 {
                     icon: Sun,
-                    title: 'Aromatic Oil Pool',
-                    description: 'Immersion in waters enriched with natural aromatic oils for a relaxing sensory experience.',
+                    title: 'Mineral Oil Bath',
+                    description: 'Immersion in a mineral-rich oil bath for a relaxing and health-enhancing sensory experience.',
                     image: oil,
                 },
                 {
                     icon: Coffee,
-                    title: 'Bar & Hospitality Services',
-                    description: 'Full bar with refreshing drinks and light refreshments, in a green and pleasant courtyard.',
+                    title: 'Restaurant Bar & Food Services',
+                    description: 'A restaurant bar offering a wide selection of quality drinks and dishes – fresh pizzas, cheese platters, vegetable platters, pasta, and more.',
                     image: bar,
                 },
                 {
@@ -92,10 +106,22 @@ export default function Services({ language }) {
                     title: 'Events & Parties',
                     description: 'The perfect place to celebrate with family and friends – birthdays, private parties, and unforgettable events in a unique atmosphere.',
                     image: heroBackground,
+                },
+                {
+                    icon: Calendar,
+                    title: 'Corporate & Group Activity Days',
+                    description: 'We offer customized packages for team-building, fun days, and unique activities for groups – the perfect combination of relaxation, experiences, and great food.',
+                    image: groups,
+                },
+                {
+                    icon: Heart,
+                    title: 'Couple’s Love Package',
+                    description: 'A luxurious romantic experience including a private suite with a jacuzzi, a 45-minute couples massage, chocolate treats, and fine wine. Duration: one and a half hours of pure romance.',
+                    image: lovePackage,
                 }
-
             ]
         }
+
     };
 
     const text = content[language] || content.en;
@@ -133,6 +159,11 @@ export default function Services({ language }) {
                         </div>
                     ))}
                 </div>
+                <p className="services__extra-note">
+                    {language === 'he'
+                        ? 'בחבילות הטיפול תיהנו מאירוח הכולל שתייה קרה, פינת קפה ותה, עוגיות וכיבוד קל. לשדרוג החוויה, ניתן להוסיף ארוחות מלאות בתוספת תשלום.'
+                        : 'Our massage and bath packages include hospitality with cold beverages, a coffee and tea corner, cookies, and light refreshments. To upgrade your experience, you can add full meals for an extra charge.'}
+                </p>
             </div>
         </section>
     );

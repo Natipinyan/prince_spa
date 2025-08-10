@@ -9,7 +9,7 @@ export default function Hero({ language, onBookNowClick }) {
         he: {
             title: 'פרינס ספא',
             subtitle: 'חוויית ספא יוקרתית בלב טבריה',
-            description: 'התנסו בחוויה מרגיעה ומחדשת כוחות במתחם הספא המפואר שלנו. טיפולים מקצועיים, בריכות מחוממות ואווירה שלוה הממתינים לכם',
+            description: 'התנסו בחוויה מרגיעה ומחדשת כוחות במתחם הספא המפואר שלנו. טיפולים מקצועיים, בריכות בטמפרטורה נעימה לאורך כל השנה, ואווירה שלוה הממתינה לכם',
             bookNow: 'הזמינו עכשיו',
             address: 'הפלמ״ח, טבריה, ישראל',
             phones: ['077-9898890', '050-9478555'],
@@ -18,13 +18,14 @@ export default function Hero({ language, onBookNowClick }) {
         en: {
             title: 'Prince Spa',
             subtitle: 'Luxury Spa Experience in the Heart of Tiberias',
-            description: 'Experience a relaxing and rejuvenating journey at our luxurious spa complex. Professional treatments, heated pools, and a serene atmosphere await you',
+            description: 'Experience a relaxing and rejuvenating journey at our luxurious spa complex. Professional treatments, pools maintained at an optimal temperature year-round, and a serene atmosphere await you.',
             bookNow: 'Book Now',
             address: 'HaPalmach St, Tiberias, Israel',
             phones: ['+972-77-989-8890', '+972-50-947-8555'],
             hours: 'Sun–Thu: 9:00–19:00 | Fri: 9:00–One hour before Shabbat'
         }
     };
+
 
     const text = content[language];
 

@@ -1,21 +1,22 @@
-import imageBar1 from '../images/bar1.jpg';
-import entry from '../images/entranceArea.jpg';
-import highLookDay1 from '../images/highLookDay1.jpg';
-import highLookNight1 from '../images/highLookNight1.jpg';
-import highLookNight2 from '../images/highLookNight2.jpg';
-import highLookNight3 from '../images/highLookNight3.jpg';
-import ice from '../images/ice.jpg';
-import iceBath from '../images/iceBath.jpg';
-import massage1 from '../images/massage1.jpg';
-import massage2 from '../images/massage2.jpg';
-import massage3 from '../images/massage3.jpg';
-import massageBed1 from '../images/massageBed1.jpg';
-import massageBed2 from '../images/massageBed2.jpg';
-import oilBath from '../images/oilBath.jpg';
-import outdoorShower from '../images/outdoorShower.jpg';
-import outdoorSink from '../images/OutdoorSink.jpg';
-import massageRoom from '../images/room.jpg';
-import towel from '../images/towel.jpg';
+/*
+// import imageBar1 from '../images/bar1.jpg';
+// import entry from '../images/entranceArea.jpg';
+// import highLookDay1 from '../images/highLookDay1.jpg';
+// import highLookNight1 from '../images/highLookNight1.jpg';
+// import highLookNight2 from '../images/highLookNight2.jpg';
+// import highLookNight3 from '../images/highLookNight3.jpg';
+// import ice from '../images/ice.jpg';
+// import iceBath from '../images/iceBath.jpg';
+// import massage1 from '../images/massage1.jpg';
+// import massage2 from '../images/massage2.jpg';
+// import massage3 from '../images/massage3.jpg';
+// import massageBed1 from '../images/massageBed1.jpg';
+// import massageBed2 from '../images/massageBed2.jpg';
+// import oilBath from '../images/oilBath.jpg';
+// import outdoorShower from '../images/outdoorShower.jpg';
+// import outdoorSink from '../images/OutdoorSink.jpg';
+// import massageRoom from '../images/room.jpg';
+// import towel from '../images/towel.jpg';
 
 const galleryData = [
     {
@@ -128,4 +129,4 @@ const galleryData = [
     },
 ];
 
-export default galleryData;
+export default galleryData;*/

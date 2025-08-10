@@ -6,8 +6,9 @@
 }
 
 .services__container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .services__header {
@@ -114,7 +115,27 @@
 
 @media (min-width: 1024px) {
     .services__grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
+
+.services__extra-note {
+    margin-top: 2.5rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--brand-primary);
+    background-color: var(--brand-secondary);
+    border: 1.5px solid var(--brand-accent);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(192, 160, 98, 0.3);
+    transition: var(--transition-smooth);
+    line-height: 1.5;
+    user-select: none;
+}
+
 
